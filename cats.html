@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="appli_cats">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cats</title>
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/cats.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <!-- typographie -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<script src="./js/cats.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+            <div class="container">
+                <div class="row">
+                    
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                          <a class="navbar-brand" href="#">Liste des races des chats</a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                      
+                          <div class="collapse navbar-collapse" id="navbarColor01">
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="./cats.html">Page principale </a>
+                              </li>
+                          </div>
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="./index.html">Retour à l'index </a>
+                              </li>
+                        </nav>                  
+            </div>
+            </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="row">
+                    <h1 class="text-center">Races de chats</h1>         
+
+            <!-- chat_abyssin -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/abyssin.jpg" class="card-img-top" alt="abyssin">
+                <div class="card-body">
+                  <h5 class="card-title">Abyssin</h5>
+                  <p class="card-text">Chat venant d'Asie</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text">3.5 à 5 kg</p>
+                  <a href="" onclick="factAbyssin()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- american_curl -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/american-curl-race-de-chat .jpg" class="card-img-top" alt="american_curl">
+                <div class="card-body">
+                  <h5 class="card-title">American curl</h5>
+                  <p class="card-text">Chat venant des Etats-Unis</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text">3.5 à 5 kg</p>
+                  <a href="" onclick="factAmericanCurl()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- american_shorthair -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/american_short_hair.jpg" class="card-img-top" alt="american_shorthair">
+                <div class="card-body">
+                  <h5 class="card-title">American shorthair</h5>
+                  <p class="card-text">Chat venant des Etats-Unis</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text">3.5 kg</p>
+                  <a href="" onclick="factAmericanShort()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- american_wirehair -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/american_wirehair.jpg" class="card-img-top" alt="wirehair">
+                <div class="card-body">
+                  <h5 class="card-title">American wirehair</h5>
+                  <p class="card-text">Chat venant des Etats-Unis</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text">5 à 6 kg</p>
+                  <a href="" onclick="factAmericanWire()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- anatoli -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/chat-anatoli.jpg" class="card-img-top" alt="anatoli">
+                <div class="card-body">
+                  <h5 class="card-title">Anatoli</h5>
+                  <p class="card-text">Chat venant de Turquie</p>
+                  <p class="card-text">Taille moyenne à grande</p>
+                  <p class="card-text">5 à 9 kg</p>
+                  <a href="" onclick="factAnatoli()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- angora_turc -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/angora-turc.jpg" class="card-img-top" alt="angora">
+                <div class="card-body">
+                  <h5 class="card-title">Angora turc</h5>
+                  <p class="card-text">Chat venant de Turquie</p>
+                  <p class="card-text">Taille petite à moyenne</p>
+                  <p class="card-text">3 à 4 kilos</p>
+                  <a href="" onclick="factAngora()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- asian -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/chat_asian_.jpg" class="card-img-top" alt="asian">
+                <div class="card-body">
+                  <h5 class="card-title"> Asian</h5>
+                  <p class="card-text">Chat venant d'Angleterre'</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text">5  kilos</p>
+                  <a href="" onclick="factAsian()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- brume_australienne -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/brume_australiennne.jpg" class="card-img-top" alt="australien">
+                <div class="card-body">
+                  <h5 class="card-title">Brume australienne</h5>
+                  <p class="card-text">Chat venant d'australie</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text">5  kilos</p>
+                  <a href="" onclick="factBrume()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- balinais -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/chat_balinais.jpg" class="card-img-top" alt="brume">
+                <div class="card-body">
+                  <h5 class="card-title">Balinais</h5>
+                  <p class="card-text">Chat venant des Etats-Unis</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text">3 à 5 kilos</p>
+                  <a href="#" onclick="factBalinais()" class="btn btn-primary">random fact</a>
+                </div>
+              </div>
+              <!-- bengal -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/chat_bengal.jpg" class="card-img-top" alt="bengal">
+                <div class="card-body">
+                  <h5 class="card-title">Bengal</h5>
+                  <p class="card-text">Chat venant des Etats-Unis</p>
+                  <p class="card-text">Taille moyenne à grande</p>
+                  <p class="card-text"> 5 à 9 kilos</p>
+                  <a href="" onclick="factBengal()" class="btn btn-primary">Random fact</a>
+                </div>
+              </div>
+              <!-- bleu_russe -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/chat_bleu_russe.png" class="card-img-top" alt="bleu_russe">
+                <div class="card-body">
+                  <h5 class="card-title">Bleu russe</h5>
+                  <p class="card-text">Chat venant de Russie ou Espagne(?)</p>
+                  <p class="card-text">Taille moyenne</p>
+                  <p class="card-text"> 2.5 à 4.8 kilos</p>
+                  <a href="" onclick="factBlueRussian()" class="btn btn-primary">Random fact</a>
+                </div>
+              </div>
+              <!-- bobtail_american -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/american_bobtail.jpg" class="card-img-top" alt="american_bobtail">
+                <div class="card-body">
+                  <h5 class="card-title">Bobtail american</h5>
+                  <p class="card-text">Chat venant des Etats-Unis</p>
+                  <p class="card-text">Taille moyenne à grande</p>
+                  <p class="card-text"> 3 à 5 kilos</p>
+                  <a href="" onclick="factBobtail()" class="btn btn-primary">Random fact</a>
+                </div>
+              </div>
+              <!-- bobtail_des_kouriles -->
+              <div class="card" style="width: 18rem;">
+                  <img src="./img/bobtail_des_kouriles.jpeg" class="card-img-top" alt="kourils">
+                  <div class="card-body">
+                      <h5 class="card-title">Bobtail des Kourils</h5>
+                      <p class="card-text">Chat venant de Russie et des Kouriles</p>
+                      <p class="card-text">Taille moyenne à grande</p>
+                      <p class="card-text">3.5 à 5 kg</p>
+                  <a href="" onclick="factBobtailKourils()" class="btn btn-primary">Random fact</a>
+                </div>
+              </div>
+              <!-- bobtail_japonais -->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/bobtail_japonais.jpg" class="card-img-top" alt="japonais">
+                <div class="card-body">
+                    <h5 class="card-title">Bobtail japonais</h5>
+                    <p class="card-text">Chat venant du Japon</p>
+                    <p class="card-text">Taille petite à moyenne</p>
+                    <p class="card-text">3.5 à 4.5 kg</p>
+                <a href="" onclick="factBobtailJapon()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- bombay -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/chat_bombay.jpg" class="card-img-top" alt="bombay">
+                <div class="card-body">
+                    <h5 class="card-title">Boombay</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3.5 à 4.5 kg</p>
+                <a href="" onclick="factBombay()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- brazilian shorthair -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/brazilian_shorthairs.jpg" class="card-img-top" alt="brazilian">
+                <div class="card-body">
+                    <h5 class="card-title">Brazilian shorthair</h5>
+                    <p class="card-text">Chat venant du Brésil</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5 kg</p>
+                <a href="" onclick="factBrazilianShort()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- british longhair -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/british_longhairs.jpg" class="card-img-top" alt="british_longhair">
+                <div class="card-body">
+                    <h5 class="card-title">British longhair</h5>
+                    <p class="card-text">Chat venant d'Angleterre</p>
+                    <p class="card-text">Taille moyenne à grande</p>
+                    <p class="card-text">3 à 7 kg</p>
+                <a href="" onclick="factBritishLong()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- british shorthair -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/british_shorthair.jpg" class="card-img-top" alt="british_shorthair">
+                <div class="card-body">
+                    <h5 class="card-title">British shorthair</h5>
+                    <p class="card-text">Chat venant d'Angleterre</p>
+                    <p class="card-text">Taille moyenne à grande</p>
+                    <p class="card-text">3 à 7 kg</p>
+                <a href="" onclick="factBritishShort()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- burmese  -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/burmese.jpeg" class="card-img-top" alt="burmese">
+                <div class="card-body">
+                    <h5 class="card-title">Burmese</h5>
+                    <p class="card-text">Chat venant de Taïlande</p>
+                    <p class="card-text">Taille moyenne à grande</p>
+                    <p class="card-text">3 à 6 kg</p>
+                <a href="" onclick="factBurmese()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- burmilla -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/burmilla.jpg" class="card-img-top" alt="burmilla">
+                <div class="card-body">
+                    <h5 class="card-title">Burmilla</h5>
+                    <p class="card-text">Chat venant d'Angleterre</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2.5 à 6.5 kg</p>
+                <a href="" onclick="factBrumilla()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- californian rex -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/californian_rex.png" class="card-img-top" alt="rex">
+                <div class="card-body">
+                    <h5 class="card-title">californian rex</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5 à 9 kg</p>
+                <a href="" onclick="factCaliforniaRex()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- californian_spangled -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/california-spangled.jpg" class="card-img-top" alt="spangled">
+                <div class="card-body">
+                    <h5 class="card-title">californian spangled</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5 à 9 kg</p>
+                <a href="" onclick="factCaliforniaSpangled()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- ceylan -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ceylan.jpg" class="card-img-top" alt="ceylan">
+                <div class="card-body">
+                    <h5 class="card-title">Ceylan</h5>
+                    <p class="card-text">Chat venant du Sri-lanka</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5 à 9 kg</p>
+                <a href="" onclick="factCeylan()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- chartreux -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/chat_chartreux.jpg" class="card-img-top" alt="chartreux">
+                <div class="card-body">
+                    <h5 class="card-title">chartreux</h5>
+                    <p class="card-text">Chat venant de France</p>
+                    <p class="card-text">Taille moyenne à grande</p>
+                    <p class="card-text">3 à 7.5 kg</p>
+                <a href="" onclick="factChartreux()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- chantilly -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/chantilly.jpg" class="card-img-top" alt="chantilly">
+                <div class="card-body">
+                    <h5 class="card-title">chantilly</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2.5 à 5.5 kg</p>
+                <a href="" onclick="factChantilly()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- chausie -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/chausie.jpg" class="card-img-top" alt="chausie">
+                <div class="card-body">
+                    <h5 class="card-title">chausie</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille grande</p>
+                    <p class="card-text">9 kg</p>
+                <a href="" onclick="factChausie()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- colorpoint_shorthair -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/colorpoint.jpg" class="card-img-top" alt="colopoint">
+                <div class="card-body">
+                    <h5 class="card-title">colorpoint</h5>
+                    <p class="card-text">Chat venant de Taïlande</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5.5 kg</p>
+                <a href="" onclick="factColorPoint()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- cornish_rex -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/cornish_rex.jpg" class="card-img-top" alt="cornish_rex">
+                <div class="card-body">
+                    <h5 class="card-title">Cornish rex</h5>
+                    <p class="card-text">Chat venant du Royaume-Uni</p>
+                    <p class="card-text">Taille petite moyenne</p>
+                    <p class="card-text">3.5 à 5.5 kg</p>
+                <a href="" onclick="factCornishRex()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- Cymric -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/cymric.jpg" class="card-img-top" alt="cymric">
+                <div class="card-body">
+                    <h5 class="card-title">Cymric</h5>
+                    <p class="card-text">Chat venant de l'Ile de Mans</p>
+                    <p class="card-text">Taille petite moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factCymric()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- devon_rex -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/devon_rex.jpg" class="card-img-top" alt="devon_rex">
+                <div class="card-body">
+                    <h5 class="card-title">Devon rex</h5>
+                    <p class="card-text">Chat venant d'Angleterre</p>
+                    <p class="card-text">Taille petite à moyenne</p>
+                    <p class="card-text">3 à 4.5 kg</p>
+                <a href="" onclick="factDevonRex()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- donskoy -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/donskoy.webp" class="card-img-top" alt="donskoy">
+                <div class="card-body">
+                    <h5 class="card-title">Donskoy</h5>
+                    <p class="card-text">Chat venant de Russie</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factDonskoy()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- European_shorthair -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/european_shorthair.jpg" class="card-img-top" alt="cymric">
+                <div class="card-body">
+                    <h5 class="card-title">european_shorthair</h5>
+                    <p class="card-text">Chat venant d'Europe</p>
+                    <p class="card-text">Taille petite moyenne</p>
+                    <p class="card-text">3.5 à 5 kg</p>
+                <a href="" onclick="factEuropeanShort()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- exotic_shorthair -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/exotic.jpg" class="card-img-top" alt="exotic">
+                <div class="card-body">
+                    <h5 class="card-title">Exotic shorthair</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille  moyenne à grande</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factExoticShort()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- german_rex -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/german.jpg" class="card-img-top" alt="german">
+                <div class="card-body">
+                    <h5 class="card-title">Cymric</h5>
+                    <p class="card-text">Chat venant de Prusse orientale</p>
+                    <p class="card-text">Taille petite moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factGerman()"class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- havana_brown -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/havana.jpg" class="card-img-top" alt="havana">
+                <div class="card-body">
+                    <h5 class="card-title">Havana</h5>
+                    <p class="card-text">Chat venant du Royaume-Uni</p>
+                    <p class="card-text">Taille petite moyenne</p>
+                    <p class="card-text">4 à 5 kg</p>
+                <a href="" onclick="factHavana()"class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- highlander -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/highlander.jpg" class="card-img-top" alt="highlander">
+                <div class="card-body">
+                    <h5 class="card-title">Highlander</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factHighlander()"class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- highland_fold -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/highland_fold.jpg" class="card-img-top" alt="highlander">
+                <div class="card-body">
+                    <h5 class="card-title">Highland fold</h5>
+                    <p class="card-text">Chat venant d'Ecosse'</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="#" onclick="factHighlandFold()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- himalayen -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/himalayen.jpg" class="card-img-top" alt="highlander">
+                <div class="card-body">
+                    <h5 class="card-title">Himalayen</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne à grande</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factHimalayan()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- kao_manee -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/kaomanee.jpg" class="card-img-top" alt="khao_manee">
+                <div class="card-body">
+                    <h5 class="card-title">Khao Manee</h5>
+                    <p class="card-text">Chat venant de Taïlande</p>
+                    <p class="card-text">Taille fine</p>
+                    <p class="card-text">2 à 3 kg</p>
+                <a href="" onclick="factKao()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- kora -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/korat.jpg" class="card-img-top" alt="korat">
+                <div class="card-body">
+                    <h5 class="card-title">Korat</h5>
+                    <p class="card-text">Chat venant de Taïlande</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2.5 à 4.5 kg</p>
+                <a href="" onclick="factKora()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- la_perm -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/laperm.jpg" class="card-img-top" alt="la_perm">
+                <div class="card-body">
+                    <h5 class="card-title">LaPerm</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factPerm()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- maine_coon -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/maine_coon.jpg" class="card-img-top" alt="maine_coon">
+                <div class="card-body">
+                    <h5 class="card-title">Maine coon</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille grande</p>
+                    <p class="card-text">5 à 9 kg</p>
+                <a href="" onclick="factMainCoon()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- mandarin -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/mandarin.jpg" class="card-img-top" alt="mandarin">
+                <div class="card-body">
+                    <h5 class="card-title">Mandarin</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factMandarin()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- manx -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/manx.png" class="card-img-top" alt="highlander">
+                <div class="card-body">
+                    <h5 class="card-title">Manx</h5>
+                    <p class="card-text">Chat venant de l'île de mans</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factManx()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- mau arabe  -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/mau_arabe.jpg" class="card-img-top" alt="mau_arabe">
+                <div class="card-body">
+                    <h5 class="card-title">Mau arabe</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2.5 à 5 kg</p>
+                <a href="" onclick="factMauArabe()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- mau_egyptien -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/mau_egyptein.png" class="card-img-top" alt="mau_egyptien">
+                <div class="card-body">
+                    <h5 class="card-title">Mau égyptien</h5>
+                    <p class="card-text">Chat venant d'Egypte</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2.5 à 5 kg</p>
+                <a href="" onclick="factMauEgyptian()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- minksin -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/minskin.jpg" class="card-img-top" alt="Minskin">
+                <div class="card-body">
+                    <h5 class="card-title">Minskin</h5>
+                    <p class="card-text">Chat venant de Russie</p>
+                    <p class="card-text">Taille naine</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factMinskin()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- munchkin -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/munchkin.jpg" class="card-img-top" alt="munchkin">
+                <div class="card-body">
+                    <h5 class="card-title">Munchkin</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille naine</p>
+                    <p class="card-text">2 à 5 kg</p>
+                <a href="" onclick="factMunchkin()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- nebelung -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/nebelung.jpg" class="card-img-top" alt="nebelung">
+                <div class="card-body">
+                    <h5 class="card-title">Nebelung</h5>
+                    <p class="card-text">Chat venant de Russie</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 6 kg</p>
+                <a href="" onclick="factNebelung()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- norvégien -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/norvegien.jpg" class="card-img-top" alt="norvegien">
+                <div class="card-body">
+                    <h5 class="card-title">Norvegien</h5>
+                    <p class="card-text">Chat venant de Norvège</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5 à 7 kg</p>
+                <a href="" onclick="factNorvege()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- ocicat -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ocicat.jpg" class="card-img-top" alt="ocicat">
+                <div class="card-body">
+                    <h5 class="card-title">Ocicat</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text"> à 5 à 7 kg</p>
+                <a href="" onclick="factOcicat()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- ojos azules -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ojos_azules.jpg" class="card-img-top" alt="azules">
+                <div class="card-body">
+                    <h5 class="card-title"> Ojos Azules</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5 à 7 kg</p>
+                <a href="" onclick="factOjo()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- oriental shorthair -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/oriental_shorthair.jpg" class="card-img-top" alt="oriental">
+                <div class="card-body">
+                    <h5 class="card-title">oriental shorthair</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 6.5 kg</p>
+                <a href="" onclick="factOriental()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- persan -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/chat_persan.jpg" class="card-img-top" alt="persan">
+                <div class="card-body">
+                    <h5 class="card-title">Persan</h5>
+                    <p class="card-text">Chat venant d'Iran</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2.3 à 6.8 kg</p>
+                <a href="" onclick="factPersan()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- peterbald -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/peterbald.jpeg" class="card-img-top" alt="peterbald">
+                <div class="card-body">
+                    <h5 class="card-title">Peterbald</h5>
+                    <p class="card-text">Chat venant de Russie</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 6.5 kg</p>
+                <a href="" onclick="factPeterbald()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- pixibob -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/pixie-bob.jpg" class="card-img-top" alt="pixibob">
+                <div class="card-body">
+                    <h5 class="card-title">Pixie-bob</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text"> 9kg</p>
+                <a href="" onclick="factPixibob()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- ragamuffin -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ragamuffin.png" class="card-img-top" alt="ragamuffin">
+                <div class="card-body">
+                    <h5 class="card-title">Ragamuffin</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">6 à 9 kg</p>
+                <a href="" onclick="factRagamuffin()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- ragdoll -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ragdoll.jpg" class="card-img-top" alt="ragdoll">
+                <div class="card-body">
+                    <h5 class="card-title">ragdoll</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille grande</p>
+                    <p class="card-text">6 à 9 kg</p>
+                <a href="" onclick="factRagdoll()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- sacre_de_birmanie -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/birmanie.jpg" class="card-img-top" alt="birmanie">
+                <div class="card-body">
+                    <h5 class="card-title">Sacré de Birmanie</h5>
+                    <p class="card-text">Chat venant de France</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 6 kg</p>
+                <a href="" onclick="factSacre()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- safari -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/safari.jpg" class="card-img-top" alt="safari">
+                <div class="card-body">
+                    <h5 class="card-title">Safari</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">11 kg</p>
+                <a href="" onclick="factSafari()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- savanah -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/savahnna.jpg" class="card-img-top" alt="savannah">
+                <div class="card-body">
+                    <h5 class="card-title">Savannah</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille grande</p>
+                    <p class="card-text">6 à 14 kg</p>
+                <a href="" onclick="factSavan()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- scottish_fold -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/scottish.jpg" class="card-img-top" alt="scottish">
+                <div class="card-body">
+                    <h5 class="card-title">Scottish Fold</h5>
+                    <p class="card-text">Chat venant d'Ecosse</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 6.5 kg</p>
+                <a href="" onclick="factScottish()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+
+            <!-- selkirk_rex -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/selkirk.jpg" class="card-img-top" alt="selkirk">
+                <div class="card-body">
+                    <h5 class="card-title">Selkirk_rex</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne à grande</p>
+                    <p class="card-text">3 à 5 kg</p>
+                <a href="" onclick="factSelkirk()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- serengeti -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/serengeti.jpg" class="card-img-top" alt="serengeti">
+                <div class="card-body">
+                    <h5 class="card-title">Serengeti</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 5 kg</p>
+                <a href="" onclick="factSerengeti()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- seychellois -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/seychellois.jpg" class="card-img-top" alt="seychelles">
+                <div class="card-body">
+                    <h5 class="card-title">Seychellois</h5>
+                    <p class="card-text">Chat venant de Taïlande</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 5 kg</p>
+                <a href="" onclick="factSeychel()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- siamois -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/siamois.jpg" class="card-img-top" alt="siamois">
+                <div class="card-body">
+                    <h5 class="card-title">Siamois</h5>
+                    <p class="card-text">Chat venant de Taïlande</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 5 kg</p>
+                <a href="" onclick="factSiam()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- siberien -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/siberien.jpg" class="card-img-top" alt="siberien">
+                <div class="card-body">
+                    <h5 class="card-title">Siberien</h5>
+                    <p class="card-text">Chat venant de Russie</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 6.5 kg</p>
+                <a href="" onclick="factSiberian()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- singapura -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/singapura.jpg" class="card-img-top" alt="singapura">
+                <div class="card-body">
+                    <h5 class="card-title">Singapura</h5>
+                    <p class="card-text">Chat venant des Etats-Unis ou Singapour</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">2 à 4 kg</p>
+                <a href="" onclick="factSinga()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- skookum -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/skookum.jpg" class="card-img-top" alt="skookum">
+                <div class="card-body">
+                    <h5 class="card-title">Skookum</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 6.5 kg</p>
+                <a href="" onclick="factSkoo()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- snowshoe -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/snowshoe.jpg" class="card-img-top" alt="snowshoe">
+                <div class="card-body">
+                    <h5 class="card-title">Snowshoe</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 5 kg</p>
+                <a href="" onclick="factSnow()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- sokoke -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/sokoke.jpg" class="card-img-top" alt="sokoke">
+                <div class="card-body">
+                    <h5 class="card-title">Sokoké</h5>
+                    <p class="card-text">Chat venant du Kenya</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 6 kg</p>
+                <a href="" onclick="factSokoke()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- somali -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/somali.jpg" class="card-img-top" alt="somali">
+                <div class="card-body">
+                    <h5 class="card-title">Somali</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 5 kg</p>
+                <a href="" onclick="factSomal()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- sphynx -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/sphynx.webp" class="card-img-top" alt="sphynx">
+                <div class="card-body">
+                    <h5 class="card-title">Sphynx</h5>
+                    <p class="card-text">Chat venant de France ou Canada</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 5 kg</p>
+                <a href="" onclick="factSphynx()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- thai -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/thai.jpg" class="card-img-top" alt="thai">
+                <div class="card-body">
+                    <h5 class="card-title">Thaï</h5>
+                    <p class="card-text">Chat venant de Thaïlande</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 5 kg</p>
+                <a href="" onclick="factThai()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- tiffany -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/tiffany.jpg" class="card-img-top" alt="tiffany">
+                <div class="card-body">
+                    <h5 class="card-title">Tiffany</h5>
+                    <p class="card-text">Chat venant du Royaume-Uni</p>
+                    <p class="card-text">Taille grande</p>
+                    <p class="card-text">12 à 8 kg</p>
+                <a href="" onclick="factTiff()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- tonkinois -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/tonkinois.jpg" class="card-img-top" alt="tonkinois">
+                <div class="card-body">
+                    <h5 class="card-title">Tonkinois</h5>
+                    <p class="card-text">Chat venant du Canada</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">5 à 6kg</p>
+                <a href="" onclick="factTonk()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- toyger -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/toyger.jpg" class="card-img-top" alt="toyger">
+                <div class="card-body">
+                    <h5 class="card-title">Toyger</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">3 à 5 kg</p>
+                <a href="" onclick="factTonk()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- turc_de_van -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/turc.jpg" class="card-img-top" alt="turc">
+                <div class="card-body">
+                    <h5 class="card-title">Turc de Van</h5>
+                    <p class="card-text">Chat venant de Turquie</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">Jusqu'à kg</p>
+                <a href="" onclick="factTurc()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- ural_rex -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ural_rex.jpg" class="card-img-top" alt="ural_rex">
+                <div class="card-body">
+                    <h5 class="card-title">Ural Rex</h5>
+                    <p class="card-text">Chat venant de Russie</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">4 à 6.5 kg</p>
+                <a href="" onclick="factUral()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+            <!-- york_chocolat -->
+            <div class="card" style="width: 18rem;">
+                <img src="./img/york.jpg" class="card-img-top" alt="york">
+                <div class="card-body">
+                    <h5 class="card-title">York Chocolat</h5>
+                    <p class="card-text">Chat venant des Etats-Unis</p>
+                    <p class="card-text">Taille moyenne</p>
+                    <p class="card-text">8 kg</p>
+                <a href="" onclick="factYork()" class="btn btn-primary">Random fact</a>
+              </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <p class="text-center">Copyright-mai 2022 <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                  </svg>
+            </a></p>
+            
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
